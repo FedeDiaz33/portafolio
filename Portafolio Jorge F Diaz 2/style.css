@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300&family=Poiret+One&display=swap');
+/*Barra de navegacion */
+
+:root {
+    --primer-color: rgb(6, 0, 97);
+    --segundo-color: rgb(10, 0, 150);
+    --tercer-color: rgb(13, 0, 201);
+
+    --color-fondo: rgb(221, 221, 221);
+    --color-link: rgb(0, 200, 35);
+    --color-link-oscuro: rgb(1, 87, 15);
+
+    --color-rectangulo: rgb(120, 120, 122);
+    --color-rectangulo-oscuro: rgb(47, 48, 49);
+    --sombra-rectangulo: rgba(12, 11, 11, 0.87);
+
+    --color-letra-claro: rgb(219, 219, 219);
+    --color-letra-oscuro:rgb(27, 27, 27);
+}
+
+
+.link {
+    color: var(--color-link);
+}
+
+.navbar {
+    padding: 1rem;
+    background: rgb(14, 4, 164);
+    background: linear-gradient(0deg, rgba(14, 4, 164, 1) 0%, rgba(45, 95, 253, 1) 100%);
+    font-family: 'Oswald', sans-serif;
+}
+
+.navbar a {
+    color: var(--color-letra-claro);
+    text-shadow: 1px 1px 1px black;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.navbar a:hover {
+    color: var(--color-link);
+    transition: 0.5s ease-in;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Etiquetas*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*Hero*/
+.hero {
+    background-color: var(--color-fondo);
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-principal {
+    padding: 3rem;
+}
+
+.hero-imagen-desarrollador {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
+
+.hero-inferior {
+    padding: 0%;
+}
+
+.hero-inferior-imagen {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.hero-principal h2 {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--color-fondo);
+    font-family: 'Oswald', 'Times New Roman', Times, serif;
+}
+
+.imagen-fondo-hero {
+    background-image: url('Imagenes/trabajo3.jpg');
+    background-size: cover;
+}
+
+/*Botones */
+
+.botones {
+    display: inline-flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.btn {
+    margin: 5px;
+    background-color: var(--primer-color);
+    color: var(--color-letra-claro);
+    box-shadow: 1px 1px 1px rgb(207, 207, 207);
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+}
+
+.btn:hover {
+    background-color: var(--color-fondo);
+    color: black;
+    transition: 1s ease-in-out;
+}
+
+/*Sobre mi*/
+.sobre-mi {
+    height: 500px;
+    padding: 10px;
+}
+
+.sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Secciones */
+.seccion-oscura {
+    background: rgb(10, 1, 134);
+    background: linear-gradient(0deg, rgb(14, 3, 165) 0%, rgba(2, 46, 189, 0.801) 100%);
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Bebas Neue', cursive;
+    color: #c7c7ca;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.sub-titulo {
+    color: #0a0a23;
+}
+
+.seccion-texto {
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #e4e2e2;
+    text-shadow: 1px 1px 1px rgb(3, 3, 3);
+}
+
+.seccion-clara {
+    color: black;
+    background-color: white;
+}
+
+.texto-negro {
+    color: black;
+}
+
+.texto-blanco {
+    color: white;
+}
+
+#titulo-grande {
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+
+.seccion-descripcion {
+    font-family: 'Bebas Neue', 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    color: #584e4e;
+}
+
+/* Experiencia */
+.experiencia {
+    padding: 40px 40px 60px 40px;
+}
+
+.experiencia-titulo {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badges-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge {
+    margin: 5px;
+}
+
+.experiencia i {
+    font-size: 2.5rem;
+    color: #7ade30;
+    background-color: #0a0a23;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.experiencia .columna {
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+    color: rgb(0, 0, 0);
+    background-color: #7ade30;
+    transform: scale(1.2);
+    transition: 2s ease-in-out;
+}
+
+/*Proyectos*/
+.proyectos-recientes {
+    padding: 20px;
+}
+
+.proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyecto:hover img {
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+    opacity: 1;
+}
+
+.proyecto {
+    position: relative;
+}
+
+.overlay .iconos-contenedor {
+    display: flex;
+}
+
+.overlay i {
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+
+
+/*Articulos*/
+.articulos {
+    min-height: 500px;
+    padding: 30px;
+}
+
+.articulos .card {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.articulos .card-header {
+    font-weight: bold;
+}
+
+/*Redes sociales del emprendimiento*/
+/* WhatApp - Facebook - Instagram*/
+
+
+#redes-sociales {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    color: #d3d2d2;
+}
+
+.bi-facebook,
+.bi-instagram {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.icon-link {
+    color: #5bd857;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-link:hover {
+    color: rgb(17, 102, 0);
+    transition: 1s;
+}
+
+.color-titulo {
+    color: rgb(212, 212, 212);
+    text-shadow: 1px 2px 1px black;
+}
+
+.bi-briefcase-fill:hover {
+    color: #70d300;
+}
+
+/* Carousel */
+.herramientas {
+    padding: 40px 40px 80px 40px;
+}
+
+.herramientas .carousel {
+    max-width: 700px;
+}
+
+.carousel-item {
+    height: 600px;
+    max-width: 800px;
+}
+
+/*Contacto*/
+.contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo {
+    margin-top: -5rem;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px black;
+    background-color: var(--color-rectangulo-oscuro);
+}
+
+
+.contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion {
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+.contacto button {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+    background-color: white;
+    color: black;
+}
+
+.contacto button:hover i {
+    color: black;
+}
+
+.contacto button i {
+    color: var(--color-link);
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.texto {
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    min-height: 400px;
+}
+
+.footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-texto {
+    font-size: 1.1rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    color: #d3d2d2;
+}
+
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+    background-color: var(--color-fondo);
+    border: 2px solid rgba(10, 10, 10, 0.671);
+}
+
+.iconos-redes-sociales a:hover i {
+    color: black;
+}
+
+.derechos-de-autor {
+    font-size: 15px;
+    color: #d3d2d2;
+    padding: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.pie-pagina {
+    background-color: var(--segundo-color);
+}
+
+/*Adaptable responsivo */
+@media screen and (max-width: 767px) {
+    .navbar-collapse {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .overlay p {
+        font-size: 18px;
+    }
+
+    .overlay i {
+        font-size: 40px;
+    }
+}
